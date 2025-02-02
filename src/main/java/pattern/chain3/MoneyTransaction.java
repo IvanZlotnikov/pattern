@@ -1,8 +1,6 @@
 package pattern.chain3;
 
 public class MoneyTransaction {
-    private double amount;
-
     public MoneyTransaction(double amount) {
         this.amount = amount;
     }
@@ -10,4 +8,6 @@ public class MoneyTransaction {
     public double getAmount() {
         return amount;
     }
+
+    private double amount;
 }
