@@ -10,8 +10,13 @@ public class Director {
     }
 
     public static Director getInstance(String sign) {
-        if (INSTANCE == null)
-            INSTANCE = new Director(sign);
+        if (INSTANCE == null){
+            synchronized (Director.class){
+                if (INSTANCE == null){
+                    INSTANCE = new Director();
+                }
+            }
+        }
         return INSTANCE;
     }
 
