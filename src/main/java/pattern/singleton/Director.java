@@ -2,11 +2,15 @@ package pattern.singleton;
 
 public class Director {
 
-    private static Director INSTANCE;
+    private static volatile Director INSTANCE;
 
     private String sign;
 
     private Director() {
+    }
+
+    private Director(String sign) {
+        this.sign = sign;
     }
 
     public static Director getInstance(String sign) {
@@ -18,10 +22,6 @@ public class Director {
             }
         }
         return INSTANCE;
-    }
-
-    public Director(String sign) {
-        this.sign = sign;
     }
 
     public void sign() {
