@@ -1,4 +1,4 @@
-package pattern.chain2;
+package pattern.chainOfResponsibility.chain2;
 
 public abstract class MessageHandler {
     MessageHandler messageHandler;

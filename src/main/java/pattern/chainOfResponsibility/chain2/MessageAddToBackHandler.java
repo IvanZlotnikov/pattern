@@ -1,4 +1,4 @@
-package pattern.chain2;
+package pattern.chainOfResponsibility.chain2;
 
 public class MessageAddToBackHandler extends MessageHandler {
     public MessageAddToBackHandler(MessageHandler messageHandler) {

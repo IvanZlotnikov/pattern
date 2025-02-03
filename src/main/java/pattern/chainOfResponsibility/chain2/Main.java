@@ -1,4 +1,4 @@
-package pattern.chain2;
+package pattern.chainOfResponsibility.chain2;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package pattern.chain3;
+package pattern.chainOfResponsibility.chain3;
 
 public abstract class ValidateTransaction {
     private ValidateTransaction next;
